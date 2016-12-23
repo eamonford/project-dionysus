@@ -48,5 +48,5 @@ services:
     irrigator:
         image: eamonford/irrigator
         environment:
-            - MQTT_HOST: mosquitto
-            - PG_HOST: postgres
+            - MQTT_HOST=mosquitto
+            - PG_HOST=postgres
