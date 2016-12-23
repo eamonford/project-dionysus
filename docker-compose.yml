@@ -45,3 +45,8 @@ services:
             - DB_USER=admin
             - DB_PASS=password
             - DB_NAME=database
+    irrigator:
+        image: eamonford/irrigator
+        environment:
+            - MQTT_HOST: mosquitto
+            - PG_HOST: postgres
