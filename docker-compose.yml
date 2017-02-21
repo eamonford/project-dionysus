@@ -47,6 +47,8 @@ services:
             - DB_NAME=database
     irrigator:
         image: eamonford/irrigator
+        depends_on:
+            - postgres
         environment:
             - MQTT_HOST=mosquitto
             - PG_HOST=postgres
