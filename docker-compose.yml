@@ -52,3 +52,4 @@ services:
         environment:
             - MQTT_HOST=mosquitto
             - PG_HOST=postgres
+            - IRRIGATOR_MASTER=dozen_laser
